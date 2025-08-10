@@ -1,6 +1,6 @@
 # Detecção e Monitoramento de Ameaças com Microsoft 365
 
-Este repositório apresenta a integração entre o SIEM da Logpoint e o Microsoft 365 via Microsoft Graph API para melhorar a visibilidade e a resposta a incidentes em ambientes corporativos.
+Este repositório apresenta os principais requisitos para monitoramento do Microsoft 365 via Microsoft Graph API para melhorar a visibilidade e a resposta a incidentes em ambientes corporativos.
 
 ---
 
