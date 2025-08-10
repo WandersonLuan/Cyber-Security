@@ -26,7 +26,7 @@ Ref: https://www.logpoint.com/en/blog/threat-detection-and-monitoring-with-micro
 |---------------------------------|------------------------|------------------------------------------------|------------------------------------|
 | `directoryAudits` / `auditSignIns` | Entra ID               | AuditLog.Read.All                              | Entra ID P1 (alguns dados); P2 para mais detalhe  |
 | `riskDetections`, `riskyUsers`     | Entra ID Identity Protection | IdentityRiskEvent.Read.All; IdentityRiskyUser.Read.All | Entra ID P2  |
-| `alerts_v2`, `incidents`           | Defender XDR           | SecurityAlert.Read.All; SecurityIncident.Read.All | Microsoft 365 Defender (sem custo extra) : |
+| `alerts_v2`, `incidents`           | Defender XDR           | SecurityAlert.Read.All; SecurityIncident.Read.All;	SecurityEvents.Read.All | Microsoft 365 Defender (sem custo extra) : |
 
 ---
 
