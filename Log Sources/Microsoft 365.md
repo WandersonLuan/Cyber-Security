@@ -76,6 +76,10 @@ Para habilitar a auditoria de caixas de correio no Office 365, siga os passos ab
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName navin@contoso.onmicrosoft.com
 
+3. **Para habilitar auditoria em massa para todas as caixas de correio de usuários, execute:**
+   ```powershell
+   Get-Mailbox -ResultSize Unlimited -Filter{RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditEnabled $true
+
 
 
 
