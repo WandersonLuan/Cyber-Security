@@ -39,22 +39,6 @@ Algumas permissões adicionais podem ser necessárias, dependendo do nível de d
 - `ThreatIntelligence.Read.All`
 
 ---
-
-## 🛠️ Configuração de Permissões na API
-
-Para habilitar permissões para coleta de eventos de atividade do Office 365:
-
-1. Acesse **API permissions** no portal do Azure e clique em **Add a permission**.
-2. Escolha **Office 365 Management APIs** → **Application permissions**.
-3. Adicione as seguintes permissões no grupo **ActivityFeed**:
-   - `ActivityFeed.Read` – Ler dados de atividade da organização.
-   - `ActivityFeed.ReadDlp` – Ler eventos de políticas DLP, incluindo dados sensíveis detectados.
-4. Adicione também:
-   - `User.Read`
-5. Clique em **Add permissions**.
-
----
-
 ## 📊 O que é Monitorado
 
 A API do Office 365 Management Activity agrupa eventos em blobs de conteúdo por tipo:
@@ -76,16 +60,27 @@ Atividades monitoradas:
 
 ## ⚙️ Configuração de Auditoria do Office 365
 
-A configuração da auditoria no Office 365 é composta por **três etapas principais**:
+### **Primeira Parte: Habilitar Auditoria de Logs no Microsoft 365**
 
-### **Etapa 1 – Configurar caixas de correio do Office 365 para auditoria**
-1. **Acesse o Exchange Online**
-   > Observação: as instruções podem variar para ambientes **GCC High** e governamentais.
-   
-2. **Conecte-se via PowerShell**:
-   ```powershell
-   Connect-ExchangeOnline -UserPrincipalName navin@contoso.onmicrosoft.com
-2. **Habilite o rastreamento no Exchange Online**:
-Para ativar auditoria em massa em todas as caixas de correio de usuários, execute no PowerShell:  
-   ```powershell
-   Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditEnabled $true
+1. Faça login no portal do **Office 365 Admin** com uma conta administrativa.
+
+2. No menu superior, use a busca para localizar e selecionar **Security** (Segurança). Isso o levará para a página **Office 365 Security & Compliance**.
+
+3. Navegue até:  
+   `Search > Audit log search`
+
+4. Clique em **Turn on auditing** (Habilitar auditoria).  
+   > Se não visualizar essa opção, provavelmente a auditoria já está habilitada. Para novos tenants, aguarde até 24 horas para que a auditoria esteja disponível.
+
+## 🛠️ Configuração de Permissões na API
+
+Para habilitar permissões para coleta de eventos de atividade do Office 365:
+
+1. Acesse **API permissions** no portal do Azure e clique em **Add a permission**.
+2. Escolha **Office 365 Management APIs** → **Application permissions**.
+3. Adicione as seguintes permissões no grupo **ActivityFeed**:
+   - `ActivityFeed.Read` – Ler dados de atividade da organização.
+   - `ActivityFeed.ReadDlp` – Ler eventos de políticas DLP, incluindo dados sensíveis detectados.
+4. Adicione também:
+   - `User.Read`
+5. Clique em **Add permissions**.
