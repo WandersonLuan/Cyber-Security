@@ -30,41 +30,25 @@ Ref: https://www.logpoint.com/en/blog/threat-detection-and-monitoring-with-micro
 
 ---
 
-##  Configuração no Logpoint
+##  Permissões
 
-1. Registrar um app no Microsoft Entra ID com permissões via OAuth 2.0  
-2. Importar o pacote `.pak` do Log Source MicrosoftGraph no Logpoint  
-3. Informar Tenant ID, Client ID e Client Secret  
-4. Criar ou usar um repositório para armazenar os logs  
-5. Normalização e enriquecimento são pré-configurados :contentReference[oaicite:8]{index=8}
+Enabling API permissions
+The application requires specific API permissions to request Office 365 activity events. In this case, we are looking for permissions related to the https://manage.office.com resource.
 
----
+Perform the following steps to configure the application permissions:
 
-##  Criação de Regras e Dashboards
+Navigate to the API permissions menu and choose Add a permission.
 
-Exemplos de query (em linguagem de busca da Logpoint) para monitoramento:
+Select the Office 365 Management APIs and click on Application permissions.
 
-- **Alertas críticos no Defender 365**:
-    ```text
-    norm_id=MicrosoftGraph api_endpoint="security/alerts_v2" risk_level=high status=new | chart count() by log_ts,...
-    ```
-- **Detecção de risco elevado no Entra ID Identity Protection**:
-    ```text
-    norm_id=MicrosoftGraph api_endpoint="identityProtection/riskDetections" risk_level=high | chart count() by log_ts, user,...
-    ```
+Add the following permissions under the ActivityFeed group:
 
-Estas queries são usadas para construir painéis, alertas e relatórios que auxiliam na resposta a incidentes em tempo real :contentReference[oaicite:9]{index=9}
+ActivityFeed.Read: Read activity data for your organization.
 
----
+ActivityFeed.ReadDlp: Read DLP policy events including detected sensitive data.
 
-##  Como Usar Este Repositório
+Click on the Add permissions button.
 
-1. Atualize o arquivo README com informações específicas do seu ambiente (Tenant, IDs, licenças)
-2. Inclua exemplos práticos de queries e screenshots dos dashboards criados
-3. Adicione passos de configuração com imagens (se possível)
 
----
 
-Se quiser, posso ajudar a refinar ainda mais o conteúdo ou traduzir partes para português técnico. Como você gostaria de continuar?
-::contentReference[oaicite:10]{index=10}
 
