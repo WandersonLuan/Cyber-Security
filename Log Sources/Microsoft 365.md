@@ -7,6 +7,7 @@ Este repositório apresenta os principais requisitos para monitoramento do Micro
 ## 📌 Referências
 - [Threat Detection and Monitoring with Microsoft 365 – Logpoint](https://www.logpoint.com/en/blog/threat-detection-and-monitoring-with-microsoft-365/)
 - [Microsoft Office 365 Audit – Fortinet FortiSIEM](https://docs.fortinet.com/document/fortisiem/7.4.0/external-systems-configuration-guide/514932/microsoft-office365-audit)
+- [Audit log activities https://learn.microsoft.com/en-us/purview/audit-log-activities)]
 
 ---
 
