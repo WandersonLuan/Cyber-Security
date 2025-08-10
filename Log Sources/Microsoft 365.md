@@ -84,3 +84,7 @@ A configuração da auditoria no Office 365 é composta por **três etapas princ
 2. **Conecte-se via PowerShell**:
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName navin@contoso.onmicrosoft.com
+2. **Habilite o rastreamento no Exchange Online**:
+Para ativar auditoria em massa em todas as caixas de correio de usuários, execute no PowerShell:  
+   ```powershell
+   Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditEnabled $true
