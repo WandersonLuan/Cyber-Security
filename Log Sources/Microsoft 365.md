@@ -53,6 +53,8 @@ ActivityFeed.Read: Read activity data for your organization.
 
 ActivityFeed.ReadDlp: Read DLP policy events including detected sensitive data.
 
+User.Read
+
 Click on the Add permissions button.
 
 
