@@ -20,13 +20,13 @@ Ref: https://www.logpoint.com/en/blog/threat-detection-and-monitoring-with-micro
 
 ##  Integrações via Microsoft Graph API com URAF (Universal REST API Fetcher)
 
-A plataforma Logpoint utiliza URAF para integrar diretamente com os seguintes endpoints:
+
 
 | Endpoint                        | Fonte Microsoft       | Permissões Necessárias                         | Licença Requerida                  |
 |---------------------------------|------------------------|------------------------------------------------|------------------------------------|
-| `directoryAudits` / `auditSignIns` | Entra ID               | AuditLog.Read.All                              | Entra ID P1 (alguns dados); P2 para mais detalhe :contentReference[oaicite:5]{index=5} |
-| `riskDetections`, `riskyUsers`     | Entra ID Identity Protection | IdentityRiskEvent.Read.All; IdentityRiskyUser.Read.All | Entra ID P2 :contentReference[oaicite:6]{index=6} |
-| `alerts_v2`, `incidents`           | Defender XDR           | SecurityAlert.Read.All; SecurityIncident.Read.All | Microsoft 365 Defender (sem custo extra) :contentReference[oaicite:7]{index=7} |
+| `directoryAudits` / `auditSignIns` | Entra ID               | AuditLog.Read.All                              | Entra ID P1 (alguns dados); P2 para mais detalhe  |
+| `riskDetections`, `riskyUsers`     | Entra ID Identity Protection | IdentityRiskEvent.Read.All; IdentityRiskyUser.Read.All | Entra ID P2  |
+| `alerts_v2`, `incidents`           | Defender XDR           | SecurityAlert.Read.All; SecurityIncident.Read.All | Microsoft 365 Defender (sem custo extra) : |
 
 ---
 
