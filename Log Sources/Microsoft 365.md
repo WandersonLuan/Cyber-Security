@@ -6,21 +6,17 @@ Este repositório apresenta os principais requisitos para monitoramento do Micro
 
 ##  Visão Geral
 
-- **Autor do blog**: Priyanka Shrestha, Solutions Engineer :contentReference[oaicite:0]{index=0}
-- **Publicação**: 7 de agosto de 2024 :contentReference[oaicite:1]{index=1}
-- **Objetivo**: Demonstrar como integrar fontes de log do Microsoft 365 à plataforma Logpoint para correlação de eventos, detecção de anomalias e resposta rápida :contentReference[oaicite:2]{index=2}
+Ref: https://www.logpoint.com/en/blog/threat-detection-and-monitoring-with-microsoft-365/
 
 ---
 
 ##  Principais Componentes & Integrações
 
 ### Microsoft Entra ID (anteriormente Azure AD)
-- Gerencia identidades e acessos com suporte a autenticação multifator e sem senha (passwordless) :contentReference[oaicite:3]{index=3}
+- Gerencia identidades e acessos com suporte a autenticação multifator e sem senha (passwordless)
 
 ### Microsoft Defender XDR (anteriormente Microsoft 365 Defender)
-- Fornece visibilidade, investigação e correlação de alertas entre diferentes produtos Defender :contentReference[oaicite:4]{index=4}
-
----
+- Fornece visibilidade, investigação e correlação de alertas entre diferentes produtos Defender
 
 ##  Integrações via Microsoft Graph API com URAF (Universal REST API Fetcher)
 
