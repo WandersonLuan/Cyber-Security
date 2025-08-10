@@ -30,6 +30,12 @@ Ref: https://www.logpoint.com/en/blog/threat-detection-and-monitoring-with-micro
 
 ---
 
+**Permissões adicionais que podem ser necessárias:**
+- `Reports.Read.All` (primária)
+- `IdentityRiskyServicePrincipal.Read.All`
+- `ThreatIndicators.Read.All`
+- `ThreatIntelligence.Read.All`
+
 ##  Permissões
 
 Enabling API permissions
@@ -48,6 +54,27 @@ ActivityFeed.Read: Read activity data for your organization.
 ActivityFeed.ReadDlp: Read DLP policy events including detected sensitive data.
 
 Click on the Add permissions button.
+
+
+## Configuração de Auditoria do Office 365
+
+A configuração da auditoria no Office 365 é composta por **três etapas principais**.  
+---
+### Etapas Principais
+1. **Configurar caixas de correio do Office 365 para auditoria**  
+2. **Configurar o Office 365 para auditoria pelo FortiSIEM**  
+3. **Configurar o FortiSIEM**
+
+---
+### Etapa 1 – Configurar caixas de correio do Office 365 para auditoria
+Para habilitar a auditoria de caixas de correio no Office 365, siga os passos abaixo:
+
+1. **Acesse o Exchange Online**  
+   > Observação: as instruções podem variar ligeiramente para organizações **GCC High** e outros ambientes governamentais.
+
+2. **Conectar via PowerShell**
+   ```powershell
+   Connect-ExchangeOnline -UserPrincipalName navin@contoso.onmicrosoft.com
 
 
 
