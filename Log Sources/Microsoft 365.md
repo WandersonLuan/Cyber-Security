@@ -8,7 +8,8 @@ Este repositório apresenta os principais requisitos para monitoramento do Micro
 - [Threat Detection and Monitoring with Microsoft 365 – Logpoint](https://www.logpoint.com/en/blog/threat-detection-and-monitoring-with-microsoft-365/)
 - [Microsoft Office 365 Audit – Fortinet FortiSIEM](https://docs.fortinet.com/document/fortisiem/7.4.0/external-systems-configuration-guide/514932/microsoft-office365-audit)
 - [Audit log activities https://learn.microsoft.com/en-us/purview/audit-log-activities)]
-
+- [Configure Azure](https://splunk.github.io/splunk-add-on-for-microsoft-cloud-services/Configureinputs3/)
+- [Architecture Azure](https://docs.splunk.com/Documentation/SVA/latest/Architectures/AzureGDI)
 ---
 
 ## 🔍 Visão Geral dos Componentes
@@ -84,3 +85,9 @@ Para habilitar permissões para coleta de eventos de atividade do Office 365:
 4. Adicione também:
    - `User.Read`
 5. Clique em **Add permissions**.
+
+---
+
+
+
+---
