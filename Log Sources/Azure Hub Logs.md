@@ -327,3 +327,4 @@ Test-NetConnection <namespace>.servicebus.windows.net -Port 443
 - [Splunk Lantern — Getting started with Microsoft Azure Event Hub data](https://lantern.splunk.com/Platform_Data_Management/Unlock_Insights/Getting_started_with_Microsoft_Azure_Event_Hub_data)
 - [Splunk Docs — Configure Azure Event Hub input (Splunk Add-on for Microsoft Cloud Services)](https://splunk.github.io/splunk-add-on-for-microsoft-cloud-services/Configureeventhubs/)
 - Documentação oficial do Azure Monitor — Diagnostic settings
+- [Securonix Conectores](https://documentation.securonix.com/r/content/active-deployment-guides/activity-import-connectors.htm#entry_0)
